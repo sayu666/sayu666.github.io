@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sayu — CSI205TC Personal Page</title>
+  <meta name="description" content="Personal webpage for CSI205TC Networking and Distributed Computing, deployed with GitHub Pages.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="hero" id="top">
+    <nav class="nav">
+      <span class="brand">sayu666</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#modules">Modules</a></li>
+        <li><a href="#networking">Networking</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch colour theme">
+        <span aria-hidden="true">◐</span>
+      </button>
+    </nav>
+
+    <div class="hero-inner">
+      <p class="eyebrow">Xi'an Jiaotong-Liverpool University · Academy of AIAT</p>
+      <h1>Hello, I'm <span class="accent">Sayu</span>.</h1>
+      <p class="lede">
+        A computing student working through <strong>CSI205TC Networking and
+        Distributed Computing</strong>. This page is both my personal site and the
+        deployed artefact for Question&nbsp;2 of the coursework: it is served from
+        GitHub Pages over HTTPS, which makes it a convenient target for the ping,
+        traceroute and packet-capture analysis in the report.
+      </p>
+      <div class="cta-row">
+        <a class="btn primary" href="#networking">See the network analysis</a>
+        <a class="btn ghost" href="https://github.com/sayu666" rel="noopener">GitHub profile</a>
+      </div>
+    </div>
+
+    <div class="hero-glow" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <section class="section" id="about">
+      <h2>About</h2>
+      <div class="split">
+        <div>
+          <p>
+            I am studying at XJTLU's Taicang campus. My current interests sit where
+            computer networks meet distributed systems: how a packet actually gets
+            from one machine to another, what guarantees TCP makes that UDP does
+            not, and how work is split across many machines once a dataset stops
+            fitting comfortably on one.
+          </p>
+          <p>
+            The coursework behind this page covers socket programming, the
+            application and transport layers, the MapReduce model, and machine
+            learning on Spark. Rather than describing those topics in the
+            abstract, this site is the deployed result of one of them.
+          </p>
+        </div>
+        <ul class="facts">
+          <li><span>Course</span><strong>CSI205TC</strong></li>
+          <li><span>Campus</span><strong>Taicang</strong></li>
+          <li><span>Focus</span><strong>Networks &amp; distributed computing</strong></li>
+          <li><span>Hosting</span><strong>GitHub Pages</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section alt" id="modules">
+      <h2>Modules in this coursework</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Socket programming</h3>
+          <p>TCP and UDP video streaming written in Python, compared on throughput,
+             latency, reliability and packet behaviour.</p>
+        </article>
+        <article class="card">
+          <h3>Web deployment</h3>
+          <p>This page: static HTML, CSS and JavaScript published through GitHub
+             Pages and analysed with ping, traceroute and packet capture.</p>
+        </article>
+        <article class="card">
+          <h3>MapReduce</h3>
+          <p>A word-count pipeline written in plain Python — map, shuffle and
+             reduce implemented without Hadoop or Spark — then the same job
+             expressed in both frameworks.</p>
+        </article>
+        <article class="card">
+          <h3>Spark MLlib</h3>
+          <p>An end-to-end machine-learning workflow on Spark: loading, feature
+             preparation, training, prediction and evaluation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="networking">
+      <h2>This site as a network target</h2>
+      <p class="section-lede">
+        Everything below is measured against this deployment, so the numbers in the
+        coursework report can be reproduced by anyone loading this page.
+      </p>
+
+      <div class="grid-2">
+        <div class="panel">
+          <h3>Resolve &amp; reach</h3>
+          <dl class="kv">
+            <dt>Domain</dt><dd><code>sayu666.github.io</code></dt>
+            <dt>Host</dt><dd>GitHub Pages CDN</dd>
+            <dt>Transport</dt><dd>DNS → TCP → TLS → HTTP/2</dd>
+            <dt>Ports</dt><dd>443 (HTTPS)</dd>
+          </dl>
+        </div>
+        <div class="panel">
+          <h3>Live client-side checks</h3>
+          <p class="hint">
+            These run in your browser against this page, so they are honest about
+            the path your own connection takes.
+          </p>
+          <button id="run-probe" class="btn primary" type="button">Run connection probe</button>
+          <ul id="probe-out" class="probe" aria-live="polite"></ul>
+        </div>
+      </div>
+
+      <div class="panel wide">
+        <h3>Protocol layers involved in loading this page</h3>
+        <table class="layers">
+          <thead>
+            <tr><th>Layer</th><th>Protocol</th><th>What it does here</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Application</td><td>DNS</td><td>Resolves <code>sayu666.github.io</code> to the CDN addresses.</td></tr>
+            <tr><td>Transport</td><td>TCP</td><td>Three-way handshake to port 443, ordered reliable delivery.</td></tr>
+            <tr><td>Security</td><td>TLS 1.3</td><td>Handshake, certificate validation, encrypted records.</td></tr>
+            <tr><td>Application</td><td>HTTP/2</td><td>Multiplexed requests for HTML, CSS, JS and the favicon.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section alt" id="contact">
+      <h2>Contact</h2>
+      <p>
+        The most reliable way to reach me is through my
+        <a href="https://github.com/sayu666" rel="noopener">GitHub profile</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built for CSI205TC Networking and Distributed Computing · deployed on GitHub Pages</p>
+    <p class="fine"><a href="#top">Back to top</a></p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

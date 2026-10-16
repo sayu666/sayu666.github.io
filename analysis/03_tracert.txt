@@ -1,0 +1,22 @@
+﻿
+Tracing route to sayu666.github.io [185.199.108.153]
+over a maximum of 15 hops:
+
+  1     9 ms    10 ms     9 ms  192.168.31.1 
+  2    10 ms     9 ms     9 ms  10.2.47.254 
+  3     *        *        *     Request timed out.
+  4     *        *        *     Request timed out.
+  5     *        *        *     Request timed out.
+  6     *        *        *     Request timed out.
+  7     *        *        *     Request timed out.
+  8     *        *        *     Request timed out.
+  9     *        *        *     Request timed out.
+ 10     *        *        *     Request timed out.
+ 11     *        *        *     Request timed out.
+ 12     *        *        *     Request timed out.
+ 13     *        *        *     Request timed out.
+ 14     *        *        *     Request timed out.
+ 15     *      139 ms     *     185.199.108.153 
+
+Trace complete.
+

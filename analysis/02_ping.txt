@@ -1,0 +1,18 @@
+﻿
+Pinging sayu666.github.io [185.199.108.153] with 32 bytes of data:
+Request timed out.
+Request timed out.
+Reply from 185.199.108.153: bytes=32 time=132ms TTL=53
+Request timed out.
+Request timed out.
+Reply from 185.199.108.153: bytes=32 time=130ms TTL=53
+Request timed out.
+Request timed out.
+Request timed out.
+Reply from 185.199.108.153: bytes=32 time=137ms TTL=53
+
+Ping statistics for 185.199.108.153:
+    Packets: Sent = 10, Received = 3, Lost = 7 (70% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 130ms, Maximum = 137ms, Average = 133ms
+
